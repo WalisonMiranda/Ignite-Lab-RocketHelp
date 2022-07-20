@@ -8,6 +8,7 @@ import {
 import { THEME } from "./src/styles/theme";
 
 import { Routes } from "./src/routes";
+import { SignIn } from "./src/screens/SignIn";
 
 import { Loading } from "./src/components/Loading";
 
@@ -24,7 +25,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Routes /> : <Loading />}
+      {fontsLoaded ? <SignIn /> : <Loading />}
     </NativeBaseProvider>
   );
 }
